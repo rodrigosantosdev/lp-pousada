@@ -401,7 +401,7 @@ html {
   }
 }
 .explore {
-  margin-top: 32px;
+  margin-block: 3rem;
 }
 .explore h2 {
   font-weight: 700;
@@ -444,6 +444,7 @@ html {
 }
 .rooms {
   width: 100%;
+  margin-block: 3rem;
 }
 .rooms h4 {
   font-size: 1.5rem;
@@ -503,13 +504,17 @@ html {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+.included {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
 .included h5 {
   font-size: 1.5rem;
   font-weight: bold;
   line-height: 1.2;
   text-align: center;
   margin-top: 3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
 }
 .included p {
   font-size: 14px;
@@ -522,6 +527,7 @@ html {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 16px;
+  margin-top: 3rem;
 }
 .included-content .included-items {
   display: flex;
@@ -549,7 +555,7 @@ html {
 }
 .footer {
   background-color: #171717;
-  margin-top: 2rem;
+  margin-top: 4rem;
   color: #ffffff;
 }
 
@@ -601,8 +607,9 @@ html {
   align-items: flex-start;
   flex-direction: column;
 }
-.footer-content .footer-adress p {
+.footer-content .footer-adress li {
   font-size: 0.875rem;
+  padding: 4px 0;
   line-height: 1.5rem;
 }
 

@@ -30,9 +30,9 @@
           <div class="menu-content">
             <ul class="menu" id="menuActive">
               <li><a href="#home">Home</a></li>
-              <li><a href="#rooms">Rooms</a></li>
-              <li><a href="#coliving">Coliving</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="#rooms">Quartos</a></li>
+              <li><a href="#coliving">Explore</a></li>
+              <li><a href="#contact">Contato</a></li>
             </ul>
             <button
               type="button"
@@ -68,13 +68,27 @@
             <form class="form">
               <div class="item">
                 <i icon-name="calendar-days" class="calendar-icon"></i>
-                <span>Check In</span>
+                Entrada
+                <label for="checkin"></label>
+                <input
+                  type="date"
+                  placeholder="Check In"
+                  aria-label="campo de check in"
+                  id="checkin"
+                />
               </div>
               <div class="item">
                 <i icon-name="calendar-days" class="calendar-icon"></i>
-                <span>Check Out</span>
+                Saida
+                <label for="checkout"></label>
+                <input
+                  type="date"
+                  placeholder="Check Out"
+                  aria-label="campo de check in"
+                  id="checkout"
+                />
               </div>
-              <button type="button">Submit</button>
+              <button type="button">Agendar</button>
             </form>
           </section>
         </div>
@@ -85,31 +99,33 @@
       <div class="container">
         <section class="details">
           <div class="details-item">
-            <div class="title">Renovated Rooms</div>
+            <div class="title">Quantidade Quartos</div>
             <div class="description">3</div>
           </div>
           <div class="details-item">
-            <div class="title">Ultra-fast Internet</div>
+            <div class="title">Internet ultrarrápida</div>
             <div class="description">400mb/s</div>
           </div>
           <div class="details-item">
-            <div class="title">Activities</div>
-            <div class="description">00</div>
+            <div class="title">Atividades</div>
+            <div class="description">
+              <i icon-name="infinity"></i>
+            </div>
           </div>
           <div class="details-item">
-            <div class="title">Amazing experience</div>
-            <div class="description">1</div>
+            <div class="title">Experiência incrível</div>
+            <div class="description">Unica</div>
           </div>
         </section>
 
         <div class="divider"></div>
 
         <section class="explore">
-          <h2>Explore the coliving</h2>
+          <h2>Explore o espaço</h2>
           <div class="explore-content">
             <div class="explore-1">
               <div class="block">
-                <h3>Great location</h3>
+                <h3>Otima localização</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Repellendus, labore cupiditate.
@@ -119,7 +135,7 @@
                 </figure>
               </div>
               <div class="block">
-                <h3>Activities</h3>
+                <h3>Atividades</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Repellendus, labore cupiditate.
@@ -142,7 +158,7 @@
                 </figure>
               </div>
               <div class="block">
-                <h3>Renovated Rooms</h3>
+                <h3>Quartos Renovados</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Repellendus, labore cupiditate.
@@ -154,7 +170,7 @@
                 </div>
               </div>
               <div class="block">
-                <h3>Working space</h3>
+                <h3>Espaço de trabalho</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Repellendus, labore cupiditate.
@@ -170,90 +186,90 @@
         </section>
 
         <section class="rooms" id="rooms">
-          <h4>Explore our rooms</h4>
+          <h4>Explore os nossos quartos</h4>
           <div class="rooms-content">
             <div class="block">
               <img src="./assets/images/foto-1.jpg" alt="" />
               <div class="block-title">
-                <strong>Ensuite</strong>
-                <span class="price">$120/night</span>
+                <strong>Suite</strong>
+                <span class="price">$380/diaria</span>
               </div>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Quisquam debitis minus ab cupiditate! Quisquam, molestiae!
               </p>
-              <button type="button">See More</button>
+              <button type="button">Veja mais</button>
             </div>
             <div class="block">
               <img src="./assets/images/foto-2.jpg" alt="" />
               <div class="block-title">
-                <strong>Ocean View</strong>
-                <span class="price">$90/night</span>
+                <strong>Quarto 1</strong>
+                <span class="price">$250/diaria</span>
               </div>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Quisquam debitis minus ab cupiditate! Quisquam, molestiae!
               </p>
-              <button type="button">See More</button>
+              <button type="button">Veja mais</button>
             </div>
             <div class="block">
               <img src="./assets/images/foto-3.jpg" alt="" />
               <div class="block-title">
-                <strong>Bali</strong>
-                <span class="price">$110/night</span>
+                <strong>Quarto 2</strong>
+                <span class="price">$250/diaria</span>
               </div>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Quisquam debitis minus ab cupiditate! Quisquam, molestiae!
               </p>
-              <button type="button">See More</button>
+              <button type="button">Veja mais</button>
             </div>
           </div>
         </section>
 
         <section class="included">
-          <h5>Included with every booking</h5>
+          <h5>o que tem a mais no local.</h5>
           <p>
-            With every booking you get access to everything you will need during
-            your stay.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequatur, magni.
           </p>
 
           <div class="included-content" id="coliving">
             <div class="included-items">
-              <i icon-name="wifi" class="icon-logo"></i>
-              <span>120mb/internet</span>
+              <i icon-name="bird" class="icon-logo"></i>
+              <span>400mb/internet wifi</span>
             </div>
             <div class="included-items">
               <i icon-name="bird" class="icon-logo"></i>
-              <span>Renovated rooms</span>
+              <span>Sinuca</span>
             </div>
             <div class="included-items">
               <i icon-name="bird" class="icon-logo"></i>
-              <span>A/C Rooms</span>
+              <span>Televisão</span>
             </div>
             <div class="included-items">
               <i icon-name="bird" class="icon-logo"></i>
-              <span>Skype Booths</span>
+              <span>Psicina</span>
             </div>
             <div class="included-items">
               <i icon-name="bird" class="icon-logo"></i>
-              <span>Activities</span>
+              <span>Proximo a um campo futebol</span>
             </div>
             <div class="included-items">
               <i icon-name="bird" class="icon-logo"></i>
-              <span>Help in transportation</span>
+              <span>Geladeira</span>
             </div>
             <div class="included-items">
               <i icon-name="bird" class="icon-logo"></i>
-              <span>Printer</span>
+              <span>Churrasqueira</span>
             </div>
             <div class="included-items">
               <i icon-name="bird" class="icon-logo"></i>
-              <span>Surf instrutor</span>
+              <span>Fogão a lenha</span>
             </div>
             <div class="included-items">
               <i icon-name="bird" class="icon-logo"></i>
-              <span>House nurse</span>
+              <span>Uma Ampla Areá Disponivel</span>
             </div>
           </div>
         </section>
@@ -280,16 +296,18 @@
           <div class="footer-links">
             <ul>
               <li><a href="#home">Home</a></li>
-              <li><a href="#rooms">Rooms</a></li>
-              <li><a href="#coliving">Coliving</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="#rooms">Quartos</a></li>
+              <li><a href="#coliving">Explore</a></li>
+              <li><a href="#contact">Contato</a></li>
             </ul>
           </div>
 
           <div class="footer-adress">
-            <p>Rua ali perto, 01</p>
-            <p>São Paulo - SP</p>
-            <p>010203020102</p>
+            <ul>
+              <li>Rua ali perto, 01</li>
+              <li>São Paulo - SP</li>
+              <li>31 99291-4040</li>
+            </ul>
           </div>
         </div>
         <div class="footer-copyright">
