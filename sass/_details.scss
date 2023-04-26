@@ -1,0 +1,39 @@
+.details {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  place-items: center;
+  width: 100%;
+  gap: 1.25rem;
+  margin: 24px auto;
+  margin-bottom: 3.125rem;
+
+  .details-item {
+    width: 100%;
+    border-radius: 0.5rem;
+    background-color: $white;
+    box-shadow: 1px 1px 2px #e7e7e7;
+
+    .title {
+      font-size: 1rem;
+      font-weight: normal;
+      padding-left: 1rem;
+      padding-top: 1rem;
+    }
+
+    .description {
+      padding-top: 2.5rem;
+      padding-left: 1rem;
+      padding-bottom: 1rem;
+      font-size: 1.75rem;
+      font-weight: 300;
+    }
+  }
+}
+
+@media (min-width: 520px) {
+  .details {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    margin-top: 48px;
+  }
+}

@@ -1,6 +1,13 @@
-@import './reset';
-@import './colors';
-@import './base';
-@import './html';
+@import "./reset";
+@import "./colors";
+@import "./base";
+@import "./html";
 
-
+// Parts
+@import "./nav";
+@import "./header";
+@import "./details";
+@import "./explore";
+@import "./rooms";
+@import "./included";
+@import "./footer";

@@ -1,5 +1,15 @@
 body {
-  font-family: 'Pathway Extreme', sans-serif;
-  color: $white;
+  font-family: "Montserrat", sans-serif;
+  color: $black;
   background-color: $primary;
+}
+
+a {
+  font-weight: normal;
+  text-decoration: none;
+  color: $black;
+}
+
+html {
+  scroll-behavior: smooth;
 }

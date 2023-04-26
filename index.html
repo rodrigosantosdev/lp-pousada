@@ -1,30 +1,308 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Pathway+Extreme:opsz,wght@8..144,300;8..144,500;8..144,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles/app.css">
-  <title>Template Base HTML, SCSS, JS</title>
-</head>
-<body>
-  <header>
-    <div class="container">
-      <h1>
-        <i icon-name="bird" class="my-class"></i>
-        Hello world.
-      </h1>
-    </div>
-  </header>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Repellendus, labore cupiditate."
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/app.css" />
+    <title>Pousada Serra</title>
+  </head>
 
-  <script src="https://unpkg.com/lucide@latest"></script>
-  <!-- https://lucide.dev/ lib de icons -->
-  <script>
-    lucide.createIcons();
-  </script>
-  <script src="./scripts/app.js"></script>
-</body>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-content">
+          <div class="logo">
+            <i icon-name="bird" class="icon-logo"></i>
+            Pousada Serra
+          </div>
+          <div class="menu-content">
+            <ul class="menu" id="menuActive">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#rooms">Rooms</a></li>
+              <li><a href="#coliving">Coliving</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button
+              type="button"
+              id="buttonMenu"
+              class="button"
+              aria-label="Button Menu"
+            >
+              <i icon-name="align-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header class="header" id="home">
+      <div class="container">
+        <div class="header-content">
+          <section class="location">
+            <span>
+              <i icon-name="map-pin" class="location-icon"></i>
+            </span>
+            <p>Catas Altas Minas Gerais</p>
+          </section>
+          <section class="heading">
+            <h1>Co-living place that you will be excited to call home</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum,
+              aut?
+            </p>
+          </section>
+
+          <section class="check-in">
+            <form class="form">
+              <div class="item">
+                <i icon-name="calendar-days" class="calendar-icon"></i>
+                <span>Check In</span>
+              </div>
+              <div class="item">
+                <i icon-name="calendar-days" class="calendar-icon"></i>
+                <span>Check Out</span>
+              </div>
+              <button type="button">Submit</button>
+            </form>
+          </section>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <section class="details">
+          <div class="details-item">
+            <div class="title">Renovated Rooms</div>
+            <div class="description">3</div>
+          </div>
+          <div class="details-item">
+            <div class="title">Ultra-fast Internet</div>
+            <div class="description">400mb/s</div>
+          </div>
+          <div class="details-item">
+            <div class="title">Activities</div>
+            <div class="description">00</div>
+          </div>
+          <div class="details-item">
+            <div class="title">Amazing experience</div>
+            <div class="description">1</div>
+          </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <section class="explore">
+          <h2>Explore the coliving</h2>
+          <div class="explore-content">
+            <div class="explore-1">
+              <div class="block">
+                <h3>Great location</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repellendus, labore cupiditate.
+                </p>
+                <figure>
+                  <img src="./assets/images/foto-1.jpg" alt="foto1" />
+                </figure>
+              </div>
+              <div class="block">
+                <h3>Activities</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repellendus, labore cupiditate.
+                </p>
+                <div class="block-images">
+                  <figure>
+                    <img src="./assets/images/foto-1.jpg" alt="foto2" />
+                  </figure>
+                  <figure>
+                    <img src="./assets/images/foto-1.jpg" alt="foto3" />
+                  </figure>
+                </div>
+              </div>
+            </div>
+
+            <div class="explore-2">
+              <div class="block">
+                <figure>
+                  <img src="./assets/images/foto-2.jpg" alt="foto1" />
+                </figure>
+              </div>
+              <div class="block">
+                <h3>Renovated Rooms</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repellendus, labore cupiditate.
+                </p>
+                <div class="block-images">
+                  <figure>
+                    <img src="./assets/images/foto-2.jpg" alt="foto1" />
+                  </figure>
+                </div>
+              </div>
+              <div class="block">
+                <h3>Working space</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repellendus, labore cupiditate.
+                </p>
+                <div class="block-images">
+                  <figure>
+                    <img src="./assets/images/foto-4.jpg" alt="foto4" />
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="rooms" id="rooms">
+          <h4>Explore our rooms</h4>
+          <div class="rooms-content">
+            <div class="block">
+              <img src="./assets/images/foto-1.jpg" alt="" />
+              <div class="block-title">
+                <strong>Ensuite</strong>
+                <span class="price">$120/night</span>
+              </div>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quisquam debitis minus ab cupiditate! Quisquam, molestiae!
+              </p>
+              <button type="button">See More</button>
+            </div>
+            <div class="block">
+              <img src="./assets/images/foto-2.jpg" alt="" />
+              <div class="block-title">
+                <strong>Ocean View</strong>
+                <span class="price">$90/night</span>
+              </div>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quisquam debitis minus ab cupiditate! Quisquam, molestiae!
+              </p>
+              <button type="button">See More</button>
+            </div>
+            <div class="block">
+              <img src="./assets/images/foto-3.jpg" alt="" />
+              <div class="block-title">
+                <strong>Bali</strong>
+                <span class="price">$110/night</span>
+              </div>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quisquam debitis minus ab cupiditate! Quisquam, molestiae!
+              </p>
+              <button type="button">See More</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="included">
+          <h5>Included with every booking</h5>
+          <p>
+            With every booking you get access to everything you will need during
+            your stay.
+          </p>
+
+          <div class="included-content" id="coliving">
+            <div class="included-items">
+              <i icon-name="wifi" class="icon-logo"></i>
+              <span>120mb/internet</span>
+            </div>
+            <div class="included-items">
+              <i icon-name="bird" class="icon-logo"></i>
+              <span>Renovated rooms</span>
+            </div>
+            <div class="included-items">
+              <i icon-name="bird" class="icon-logo"></i>
+              <span>A/C Rooms</span>
+            </div>
+            <div class="included-items">
+              <i icon-name="bird" class="icon-logo"></i>
+              <span>Skype Booths</span>
+            </div>
+            <div class="included-items">
+              <i icon-name="bird" class="icon-logo"></i>
+              <span>Activities</span>
+            </div>
+            <div class="included-items">
+              <i icon-name="bird" class="icon-logo"></i>
+              <span>Help in transportation</span>
+            </div>
+            <div class="included-items">
+              <i icon-name="bird" class="icon-logo"></i>
+              <span>Printer</span>
+            </div>
+            <div class="included-items">
+              <i icon-name="bird" class="icon-logo"></i>
+              <span>Surf instrutor</span>
+            </div>
+            <div class="included-items">
+              <i icon-name="bird" class="icon-logo"></i>
+              <span>House nurse</span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-box">
+            <div class="footer-logo">
+              <i icon-name="bird" class="icon-logo"></i>
+              <p>Pousada Serra</p>
+            </div>
+            <p class="footer-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+              cum ea labore, alias adipisci eveniet?
+            </p>
+            <button type="button" class="footer-button">
+              Entrar em contato
+            </button>
+          </div>
+
+          <div class="footer-links">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#rooms">Rooms</a></li>
+              <li><a href="#coliving">Coliving</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-adress">
+            <p>Rua ali perto, 01</p>
+            <p>São Paulo - SP</p>
+            <p>010203020102</p>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <p>Copyright - UI Design & Coding | rodrigosantosdev</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- https://lucide.dev/ lib de icons -->
+    <script>
+      lucide.createIcons();
+    </script>
+    <script src="./scripts/app.js"></script>
+  </body>
 </html>

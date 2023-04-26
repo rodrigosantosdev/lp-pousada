@@ -1,0 +1,128 @@
+.footer {
+  background-color: $gray-900;
+  margin-top: 2rem;
+  color: $white;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding-block: 1.5rem;
+  gap: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .footer-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .footer-description {
+    font-size: 0.875rem;
+    line-height: 1.3rem;
+  }
+
+  .footer-button {
+    padding: 0.6rem;
+    font-weight: bold;
+    margin-top: 0.75rem;
+    background-color: $white;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    border: 0;
+  }
+
+  .footer-links {
+    display: flex;
+    justify-content: flex-start;
+    li {
+      padding-block: 0.5rem;
+    }
+    a {
+      color: $white;
+      font-size: 0.875rem;
+    }
+  }
+
+  .footer-adress {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    p {
+      font-size: 0.875rem;
+      line-height: 1.5rem;
+    }
+  }
+}
+.footer-copyright {
+  border-top: 1px solid $gray-800;
+
+  p {
+    padding: 2rem;
+    font-size: 0.875rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .footer-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer-description {
+    margin-top: 1rem;
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .footer-links {
+    margin-top: 2.5rem;
+  }
+
+  .footer-adress {
+    margin-top: 2.5rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .footer-content {
+    grid-template-columns: repeat(3, 1fr);
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+
+      li {
+        padding-block: 0.5rem;
+      }
+      a {
+        color: $white;
+        font-size: 0.875rem;
+      }
+    }
+
+    .footer-adress {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      p {
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .footer-content {
+    padding-right: 0;
+  }
+}
